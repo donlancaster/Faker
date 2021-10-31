@@ -10,7 +10,7 @@ namespace Project
         {
             public string name;
             public int age { get; set; }
-            float money = 10.05f;
+        public double money;
             public List<Dog> dogs;
             public Profile profile;
         }
@@ -25,14 +25,6 @@ namespace Project
         class Profile
         {
             public String address;
-            public Profile()
-            {
 
-            }
-            public Profile(string addr)
-            {
-                //throw new Exception();
-                //address = addr;
-            }
         }
     }
