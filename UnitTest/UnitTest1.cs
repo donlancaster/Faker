@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using FakerLib.Interfaces;
 using FakerLib.Generators;
+using PluginLongGenerator;
+using FakerLib;
 
 namespace UnitTest
 {
@@ -35,15 +37,38 @@ namespace UnitTest
             Assert.AreEqual(user.age == default(int), false, "÷¸");
         }
         [TestMethod]
+        public void DateFieldTest()
+        {
+            Assert.AreEqual(user.date == default(DateTime), false, "÷¸");
+        }
+
+        [TestMethod]
         public void ProfileFieldTest()
         {
-            Assert.AreEqual(user.name == null, false, "÷¸");
+            Assert.AreEqual(user.profile == null, false, "÷¸");
         }
         [TestMethod]
         public void DogsListTest()
         {
             Assert.AreEqual(user.dogs == null, false, "÷¸");
         }
+
+        [TestMethod]
+        public void DogNameTest()
+        {
+            foreach (Dog dog in user.dogs)
+            {
+                Assert.AreEqual(dog.name == default(string), false, "÷¸");
+            }
+        }
+
+        [TestMethod]
+        public void DogLongValueTest()
+        {
+            Assert.AreEqual(user.dogs[0].longValue == default(long), false, user.dogs[0].longValue.ToString());
+
+        }
+
 
 
     }
@@ -85,6 +110,14 @@ namespace UnitTest
         }
 
         [TestMethod]
+        public void LongGeneratorTest()
+        {
+            IGenerator generator = new LongGenerator();
+            object generated = generator.Create();
+            Assert.AreEqual(generated.GetType(), typeof(long), generated.ToString());
+        }
+
+        [TestMethod]
         public void CollectionGeneratorTest()
         {
             FakerLib.Faker faker = new FakerLib.Faker();
@@ -98,10 +131,23 @@ namespace UnitTest
     }
 
     [TestClass]
+    public class PluginsTest
+    {
+        [TestMethod]
+        public void PluginLoadTest()
+        {
+            Dictionary<Type, IGenerator> plugins = new Dictionary<Type, IGenerator>();
+            PluginLoader loader = new PluginLoader(plugins);
+            loader.LoadPluginGenerators();
+            Assert.AreEqual(plugins.Count, 2, "Wrong number of loaded plugins");
+        }
+    }
+
+    [TestClass]
     public class UnitTest1
     {
 
-    
+
 
 
 

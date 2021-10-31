@@ -13,6 +13,7 @@ namespace UnitTest
         public string name;
         public int age { get; set; }
         public double money;
+        public DateTime date;
         public List<Dog> dogs;
         public Profile profile;
     }
@@ -22,6 +23,7 @@ namespace UnitTest
     {
         public String name;
         public User owner;
+        public long longValue;
     }
 
     class Profile

@@ -28,6 +28,7 @@ namespace FakerLib
             };
             PluginLoader loader = new PluginLoader(generators);
             loader.LoadPluginGenerators();
+            Console.WriteLine(generators.Count);
             circularReferencesEncounter = new List<Type>();
         }
 

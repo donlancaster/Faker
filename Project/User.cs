@@ -22,7 +22,7 @@ namespace Project
         {
             public String name;
             public User owner;
-        public long longValue;
+            public long longValue;
     }
 
         class Profile
