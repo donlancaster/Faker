@@ -13,7 +13,6 @@ namespace Project
             float money = 10.05f;
             public List<Dog> dogs;
             public Profile profile;
-
         }
 
 
@@ -21,7 +20,6 @@ namespace Project
         {
             public String name;
             public User owner;
-
         }
 
         class Profile

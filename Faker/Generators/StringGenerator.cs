@@ -14,7 +14,7 @@ namespace FakerLib.Generators
         public object Create()
         {
             Random random = new Random();
-            int length = random.Next(byte.MaxValue);
+            int length = random.Next(10);
             StringBuilder builder = new StringBuilder();
             CharGenerator chr = new CharGenerator();
             for (int i = 0; i < length; i++)
