@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project", "Project\Project.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{5730EE5F-3648-4820-A4EE-F45F2C588750}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginLongGenerator", "PluginLongGenerator\PluginLongGenerator.csproj", "{965EFC1D-468E-420D-9888-DBCA94CA8F5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginDateTimeGenerator", "PluginDateTimeGenerator\PluginDateTimeGenerator.csproj", "{C8A03405-1220-4212-B66A-DDF720969233}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{5730EE5F-3648-4820-A4EE-F45F2C588750}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5730EE5F-3648-4820-A4EE-F45F2C588750}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5730EE5F-3648-4820-A4EE-F45F2C588750}.Release|Any CPU.Build.0 = Release|Any CPU
+		{965EFC1D-468E-420D-9888-DBCA94CA8F5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{965EFC1D-468E-420D-9888-DBCA94CA8F5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{965EFC1D-468E-420D-9888-DBCA94CA8F5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{965EFC1D-468E-420D-9888-DBCA94CA8F5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8A03405-1220-4212-B66A-DDF720969233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8A03405-1220-4212-B66A-DDF720969233}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8A03405-1220-4212-B66A-DDF720969233}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8A03405-1220-4212-B66A-DDF720969233}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

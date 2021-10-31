@@ -10,6 +10,7 @@ namespace FakerLib
 {
     public class PluginLoader
     {
+      
         private static readonly string PluginPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "plugins");
         private Dictionary<Type, IGenerator> generators;
 
@@ -20,13 +21,15 @@ namespace FakerLib
 
         public void LoadPluginGenerators()
         {
-            Console.WriteLine(PluginPath);
+
+         
             if (!Directory.Exists(PluginPath))
                 return;
 
             string[] files = Directory.GetFiles(PluginPath, "*.dll");
-           
 
+
+            Console.WriteLine(files.Length);
             foreach (var file in files)
             {
                 Assembly assembly = Assembly.LoadFrom(file);

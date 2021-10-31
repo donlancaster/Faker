@@ -7,6 +7,7 @@ using FakerLib.Interfaces;
 using FakerLib.Generators;
 using System.Reflection;
 
+
 namespace FakerLib
 {
     public class Faker : IFaker
@@ -21,12 +22,8 @@ namespace FakerLib
             {
                 { typeof(bool), new BoolGenerator()},
                 { typeof(char), new CharGenerator()},
-               
                 { typeof(double), new DoubleGenerator()},
-               
                 { typeof(int), new IntGenerator()},
-               
-             
                 { typeof(string), new StringGenerator()},
             };
             PluginLoader loader = new PluginLoader(generators);

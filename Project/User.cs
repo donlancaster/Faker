@@ -11,8 +11,10 @@ namespace Project
             public string name;
             public int age { get; set; }
         public double money;
-            public List<Dog> dogs;
+        public DateTime date;
+        public List<Dog> dogs;
             public Profile profile;
+        
         }
 
 
@@ -20,7 +22,8 @@ namespace Project
         {
             public String name;
             public User owner;
-        }
+        public long longValue;
+    }
 
         class Profile
         {
